@@ -1,0 +1,7 @@
+
+  {{ 'tags-lulu.css' | asset_url | stylesheet_tag }}
+
+
+{% for tag in product.tags reversed %}
+  <p class="class-test">{{ tag }}</p>
+{% endfor %}

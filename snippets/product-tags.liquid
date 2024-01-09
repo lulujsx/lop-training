@@ -1,0 +1,18 @@
+{% style %}
+  .tags-container {
+    display: flex;
+    gap: 20px;   
+  }
+  .tag {
+    background-color: black;
+    color: white;
+    padding: 3px 20px;
+    border-radius: 10px;
+  }
+{% endstyle %}
+
+<div class="tags-container">
+    {% for tag in product.tags reversed %}
+      <p class="tag">{{ tag }}</p>
+    {% endfor %}
+</div>s
